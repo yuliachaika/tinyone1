@@ -1,0 +1,421 @@
+/* @import url(reset.css); 
+ *//* подключаем файл сброса стилей */
+
+/*--------------
+Common ---------  */
+* {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+body {
+	font-family: 'PT Sans', sans-serif;
+}
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0 10px;
+		
+}
+.small-container {
+	max-width: 780px;
+	padding: 0 23px;
+}
+a:focus {
+	outline: none;
+}
+.header-section {
+	width: 80%;
+	margin: 0 auto;
+	padding-bottom: 24px;
+	text-align: center;
+}
+.header-section .header-title {
+	margin-top: 0;
+	margin-bottom: 16px;
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 36px;
+	
+}
+.header-section .header-subtitle {
+	margin-top: 0;
+	margin-bottom: 16px;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 24px;
+}
+/*--------------
+Header ---------  */
+header {
+	padding-top: 60px;
+	padding-bottom: 30px;
+	background-color: #fcdb00;
+	
+}
+header .container {
+	font-size: 0;
+}
+
+.logo {
+	display: inline-block;
+	width: 30%;
+	vertical-align: middle;
+}
+.main-navigation {
+	display: inline-block;
+	width: 70%;
+	vertical-align: middle;
+}
+.menu {
+	list-style: none;
+    padding-left: 0;
+    margin: 0;
+    text-align: right;
+}
+.menu li {
+	display: inline-block;
+	margin-right: 70px;
+}
+.menu li:last-child {
+	margin-right: 0;
+}
+.menu li a {
+	font-size: 22px;
+	font-weight: 700;
+	color: #010101;
+	text-decoration: none;
+	transition: color .3s ease;  /* для плавных переходов!!!!*/
+}
+.menu li a:hover {
+	color: gray;
+}
+.menu li:first-child {
+	position: relative;
+}
+.menu li:first-child a::after {
+	content: "";
+	display: block;
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 10px solid #010101;
+	position: absolute;
+	top: 10px;
+	right: -20px;
+    transition: all .3s ease;
+}
+.menu li:first-child a:hover::after {
+	border-top: 10px solid gray;
+} 
+/*--------- slider ----------*/
+.slider {
+	padding-top: 30px;
+	padding-bottom: 50px;
+	background-color: #fcdb00;
+}
+.slider .container {
+	font-size: 0;
+}
+.slider-columns { /* !!!!!!!!!чтобы не задавать 2 правила к двум блокам, 
+	а можно задать двум div еще один общий класс*/
+	display: inline-block;
+	width: 50%;
+}
+.slider .slide-content {
+	margin-bottom: 44px;
+}
+.slider .slider-columns {
+	vertical-align: middle;
+}
+.slider .info {
+	padding-right: 9%;
+    box-sizing: border-box;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 20px;
+}
+.slider .image {
+	text-align: right;
+}
+.slider .title {
+	margin-top: 0;
+	margin-bottom: 22px;
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 36px; /* --- ВАЖНО ----*/
+}
+.slider .subtitle {
+	margin-top: 0;
+	margin-bottom: 22px;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 24px;
+}
+.slider .text {
+	margin-top: 0;
+	margin-bottom: 40px;
+}
+.os {
+	margin: 0;
+	padding-left: 0;
+	list-style: none;
+}
+.os li {
+	display: inline-block;
+	margin-right: 38px;
+}
+.os li:last-child {
+	margin-right: 0;
+}
+.os li a {
+	color: #010101;
+	font-size: 42px;
+	font-weight: 400;
+	line-height: 20px;
+}
+.slide-nav {
+	margin: 0;
+	padding-left: 0;
+	list-style: none;
+	font-size: 0;
+	text-align: center;
+}
+ul {
+	padding-left: 0;
+}
+ul.slide-nav li {
+	display: inline-block;
+	font-size: 16px;
+}
+.slide-nav button {
+	position: relative;
+	width: 14px;
+    height: 14px;
+    padding: 0;
+    border-radius: 50px;
+    border: none;
+    background-color: rgba(255, 255, 255, .5);
+    transition: all .3s ease;
+}
+.slide-nav li:nth-child(2) button {
+	margin: 0 7px;
+}
+.slide-nav button span {
+	visibility: hidden;
+	position: absolute;
+	
+}
+.slide-nav button.active {
+	background-color: white;
+}
+.slide-nav button:focus {
+	outline: none;
+}
+.slide-nav button:hover {
+	cursor: pointer;
+	background-color: #FFF;
+}
+/* ------------ features ----------- */
+
+
+.header-section .header-title {
+	margin-top: 0;
+	margin-bottom: 16px;
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 36px;
+	
+}
+.header-section .header-subtitle {
+	margin-bottom: 16px;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 24px;
+	margin-top: 0;
+	
+}
+.features  {
+	padding-top: 118px;
+	padding-bottom: 78px;
+}
+.features .header-title {
+	color: #010101;
+}
+.features .header-subtitle {
+	color: #313841;
+}
+
+.features-list {
+	margin: 0;
+	padding-left: 0;
+	padding-top: 4px;
+	list-style: none;
+	font-size: 0; /* для родителя*/
+
+}
+.features-list .text {
+	-ms-word-break: break-word;
+	    word-break: break-word;
+}
+.features-list li {
+	margin-bottom: 86px;
+	width: 33.3%;
+	display: inline-block;
+	font-size: 0;
+}
+.features-list .icon {
+	width: 20%;
+	color: #010101;
+    font-size: 50px;
+	font-weight: 400;
+	line-height: 32px;
+}
+.features-list .info {
+	width: 80%;
+	padding: 0 15px;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 20px;
+	color: #898989;
+}
+.features-list .info .title {
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 24px;
+	color: #010101;
+}
+.features-list .list-column {
+	display: inline-block;
+	vertical-align: top;
+	
+}
+/*  ------ features ------*/
+ .contacts {
+ 	padding-top: 96px;
+ 	padding-bottom: 50px;
+	background-color: #232527;
+}
+.contacts .header-title {
+	color: #fcdb00;
+}
+.contacts .header-subtitle {
+	color: #898989;
+}
+.contacts form {
+	padding-bottom: 78px;
+	font-size: 0;
+}
+.contacts form .form-left {
+	width: 80%;
+	display: inline-block;
+
+}
+.contacts form .form-right {
+	width: 20%;
+	display: inline-block;
+	text-align: right;
+}
+.contacts form input[type="email"] {
+	height: 50px;
+    width: 100%;
+    border-radius: 3px;
+    border: none;
+    padding: 0 20px;
+    line-height: 50px;
+}
+
+.contacts form input[type="email"]:focus {
+	outline-color: #fcdb00;
+	
+}
+.contacts form input[type="submit"] {
+	width: 130px;
+ 	height: 50px;
+	border-radius: 3px;
+	border: none;
+	background-color: #fcdb00;
+	color: #010101;
+	text-transform: uppercase;
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.contacts form input[type="submit"]:focus {
+	outline-color: #fcdb00;
+} 
+.contacts form input[type="submit"]:hover {
+	cursor: pointer;
+	background-color: darkorange;
+}
+.social {
+	text-align: center;
+	margin-bottom: 34px;
+}
+.social li {
+	width: 44px;
+	height: 44px;
+	padding: 5px;
+	margin-right: 30px;
+	border-radius: 3px;
+	text-align: center;
+	background-color: #fcdb00;
+	transition: all .3 ease;
+}
+.social li a {
+	font-size: 28px;
+	line-height: 44px;
+}
+.social li:hover {
+	background-color: darkorange;
+}
+
+/* --------- Footer --------- */
+footer {
+	padding-top: 50px;
+	padding-bottom: 140px;
+	background-color: #232527;
+	color: white;
+}
+footer a {
+	color: white;
+	text-decoration: none;
+}
+footer .container {
+	font-size: 0;
+}
+.footer-col {
+	display: inline-block;
+	vertical-align: top;
+}
+.footer-col.info {
+	width: 25%;
+	font-size: 16px;
+}
+.footer-col.menus {
+	width: 75%;
+}
+.footer-col ul {
+	width: 25%;
+	display: inline-block;
+	margin: 0;
+	padding-left: 0;
+	list-style: none;
+	vertical-align: top;
+}
+.footer-col ul li {
+	font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
